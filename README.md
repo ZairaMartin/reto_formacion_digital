@@ -17,9 +17,9 @@
   cuatro alumnos y una profesora. Sin embargo, la implementación y desarrollo específico de la maqueta presentada
   en este repositorio fue realizado únicamente por las siguientes alumnas:
 
-  - Zaira Martín Iglesias
-  - Noelia González Gracia
-  - Paula González Sánchez
+  - Zaira Martín 
+  - Noelia González 
+  - Paula González 
 
   ## Estado del proyecto:
   Este proyecto es una maqueta rápida desarrollada para un video de presentación y no está activamente mantenido.
