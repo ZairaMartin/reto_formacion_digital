@@ -1,0 +1,311 @@
+:root{
+    --color-fondo: #13111C;
+    --color-light-yellow: #FEF08A;
+    --color-yellow: #F7DF1E;
+    --color-grenn: #4ADE80;
+    --color-blue: #1DA1F2;
+    --color-lila: #a05bf7;
+}
+/* .elemento {
+    color: var(--color-primario);
+    background-color: var(--color-secundario); 
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #13111C;
+    color: white;
+    font-family: Verdana, Tahoma, system-ui, Arial, Helvetica, sans-serif;
+    
+}
+
+/* ~ principal ~ */
+
+.container2{
+    display: grid;
+    grid-template-rows: 170px auto 100px;
+    grid-template-columns: 20% auto;
+    min-height: 100vh;
+    grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+    /* place-items: center; */
+    letter-spacing: 1px;
+}
+
+.header{
+    grid-area: header;
+    /* display: flex; */
+    /* flex-direction: row; */
+    
+    .header__logo{ 
+        font-size: 36px;
+        /* margin-top: 20px; */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header__tittle{
+        margin-top: 40px;
+    }
+
+    .logo{
+        width: 180px;
+        margin:20px;
+        margin-top: 30px;
+    }
+
+    #navbar{
+        position: absolute;
+        right: 70px;
+        top: 35px;
+        font-size: 20px;
+
+        ul > li{
+            display: inline-flex;
+            flex-direction: row;
+            margin: 0 20px;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover{
+                color: var(--color-grenn);
+                text-shadow: 0px 0px 1px var(--color-light-yellow);
+                
+            }
+        }
+    }
+    .oculto{
+        background-color: var(--color-fondo);
+        padding: 20px;
+        
+    }
+
+    
+    #navbar ul ul{
+        display: none;
+    }
+
+    
+    #navbar li:hover>ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        top: 20px;
+    }
+
+    #navbar ul ul li{
+        margin-bottom: 10px;
+    }
+    
+    #navbar li:hover>ul>li:hover{
+        color: var(--color-lila);
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.656);
+    }
+
+
+}
+
+.aside{
+    grid-area: aside;
+    font-size: 18px;
+    .menu__lateral{
+        margin-left: 40px;
+    }
+
+    .menu__lateral ul li {
+        list-style:decimal;
+        margin-bottom: 13px;
+        a{
+            text-decoration: none;
+            color: white;
+        } 
+    }
+    
+    
+    .menu__lateral ul ul li{
+        margin-left: 15px;
+        list-style: circle;
+    }
+    .menu__lateral ul ul li:first-child{
+        margin-top: 13px;
+    }
+    
+    .menu__lateral ul a:hover{
+        color: var(--color-blue);
+    }
+
+}
+
+.main{
+    grid-area: main;
+    font-size: 18px;
+    width: 100%;
+}
+
+/* * IDENTIFICACION DIGITAL */
+.id_firma .tipos__id ul>li>a,
+.id_digi .menu__tarj .tipos_tarj ul>li>a,
+.id_digi .menu__dig .tipos__id ul> li> a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.id_firma .tipos__id ul>li>a:hover,
+.id_digi .tipos_tarj ul>li>a:hover,
+.id_digi .menu__dig .tipos__id ul> li> a:hover{
+    color: var(--color-grenn);
+}
+
+.id_firma .tipos__id ul>li,
+.id_digi .tipos_tarj ul>li,
+.id_digi .menu__dig .tipos__id ul> li{
+    list-style: none;
+    padding: 5px 10px;
+}
+.tipos__id,
+.tipos_tarj{
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.big{
+    
+    color: var(--color-light-yellow);
+}
+.tittle{
+    font-size: 40px;
+    margin-left: 30px;
+    font-family: Consolas,'Courier New', Courier, monospace;
+    color:var(--color-yellow);
+}
+
+.tittle:hover{
+    color: var(--color-grenn);
+}
+
+.que_es_digit{
+    margin-bottom: 60px;
+}
+
+.sub__tittle{
+    font-size: 28px;
+    font-family: Consolas,'Courier New', Courier, monospace;
+    margin: 20px ;
+    margin-top: 30px;
+    color: var(--color-lila);
+    
+}
+.sub__tittle:hover{
+    color: var(--color-blue);
+}
+
+.sub__sub__tittle{
+    font-size: 25px;
+    font-family: Consolas,'Courier New', Courier, monospace;
+    margin: 20px ;
+    margin-top: 30px;
+    color: var(--color-grenn);
+}
+
+.sub__sub__tittle:hover{
+    color: var(--color-light-yellow);
+}
+
+.img_link{
+    margin: 30px 90px;
+    img{
+        width: 600px;
+    }
+}
+
+
+
+.text_aute,
+.text_digi,
+.text_firma,
+.text_tarj,
+.text_bio{
+    width: 90%;
+    margin-left: 40px;
+    font-size: 22px;
+    font-weight:lighter;
+    line-height: 1.7em;
+}
+
+
+/* * FIRMA DIGITAL */
+.img_digi,
+.img_autofirma{
+    transition:all 1s ease;
+    width:450px;
+    margin: 30px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.534);
+    border-radius: 7px;
+}
+
+.img_digi:hover,
+.img_autofirma:hover{
+    transform:scale(1.25);
+}
+
+#final_pasos{
+    padding: 15px;
+    margin: 20px auto;
+}
+
+
+/* * BIOMETRICA */
+
+.destacado{
+    color: var(--color-light-yellow);
+    font-size: 1.25rem;
+}
+
+#biometrica,
+#id_digi,
+#id_aute,
+#id_firma{
+    width: 80%;
+}
+
+
+/** BOTON DEL PANICO */
+#boton__panico{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 50;
+    a{
+        text-decoration: none;
+    }
+}
+
+.img__panico{
+    display: block;
+    width: 100px;
+    transition:all 0.7s ease;
+    filter: drop-shadow(-2px 2px 15px rgba(255, 255, 255, 0.687));
+}
+
+.img__panico:hover{
+    transform:scale(1.25);
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+
