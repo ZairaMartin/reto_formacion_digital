@@ -17,9 +17,9 @@
   cuatro alumnos y una profesora. Sin embargo, la implementación y desarrollo específico de la maqueta presentada
   en este repositorio fue realizado únicamente por las siguientes alumnas:
 
-  - Zaira Martín 
-  - Noelia González 
-  - Paula González 
+  -  [@Zaira Martín](https://github.com/ZairaMartin)
+  -  [@Noelia González](https://github.com/noeliagonzalez29)
+  -  [@Paula González](https://github.com/pgonzalezsanchez93)
 
   ## Estado del proyecto:
   Este proyecto es una maqueta rápida desarrollada para un video de presentación y no está activamente mantenido.
